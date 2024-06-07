@@ -16,5 +16,5 @@ jobs:
     - name: Build & Push Image
       run: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "sandy06" --password-stdin
-        docker image build -t dab8106/pyflask:latest .
-        docker push dab8106/pyflask:latest
+        docker image build -t sandy06/fetch_models:initial .
+        docker push sandy06/fetch_models:initial
